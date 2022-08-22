@@ -1,0 +1,6 @@
+MPU-6500
+Arduino Nano
+Двигатели Pololu micro motor x2
+Драйвер двигателей
+Tracking cam
+Аккум
