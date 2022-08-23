@@ -42,10 +42,15 @@ void Gyro_out(int info) {
   int16_t gx = -(Buf[8] << 8 | Buf[9]);
   int16_t gy = -(Buf[10] << 8 | Buf[11]);
   int16_t gz = (Buf[12] << 8 | Buf[13]);
-  if (info == 1) {
-    return gz;
-  }
-  if (info == 2) {
-    return az;
-  }
+  
+  //Type of output choise
+  return info== 1?gz:az;
+  //OR:
+  //  if (info == 1) {
+  //    return gz; //Gyro z angle(Code0.1 line 82)
+  //   }
+  //  if (info == 2) {
+  //    return az;// Aссel z angle(Code0.1 line 83)
+  //   }
+  
 }
