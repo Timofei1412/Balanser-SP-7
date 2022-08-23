@@ -19,20 +19,29 @@ void cam(int info_type){
             posy[i] = trackingCam.blob[i].cy;// Y coordinate of senter of the blob
         }   
     }
+    /*
+        Check of line direction
+    */
     if (line_type != "brick"){ // Type of line choice
-        if(posx[0] == posx[q]){
+        if(posx[0] == posx[q] ){// if line is strait
             line_type = "strait";
-        }else if (posx[0] >= posx[q]){
+        }
+        else if (posx[0] >= posx[q]){//If line is pointing to the left 
             line_type = "left";
-        }else if (posx[0] <= posx[q]){
+        }
+        else if (posx[0] <= posx[q]){//If line is pointing to the right
             line_type = "right";
         }
     }
-    if (info_type = 0){
-        return line_type;
-    }if (info_type = 1){
-        return posx[q]-posx[0];
-    }
+    //Type of output choise
+    return info_type== 0?line_type:posx[q]-posx[0];
+    //OR:
+    //  if (info_type = 0){
+    //        return line_type;//Check (Code0.1 line 78)
+    //  }if (info_type = 1){
+    //      return posx[q]-posx[0]; //For the line PID(Code0.1 line 112)
+    //  }
+    
 
     // // wait for the next frame
     // while(millis() - previousMillis < 33) 
