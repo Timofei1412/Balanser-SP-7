@@ -5,7 +5,7 @@
 >В данном роботе используется робототехническая платформа Arduino, а именно плата на базе микроконтроллера Atmega 328p [Arduino Nano](https://docs.arduino.cc/hardware/nano) и набор Arduino совместимой электроники.    
 Arduino Nano мы выбрали из-за ее маленького размера и удобства программирования, а также из-за огромного колличества датчиков, совместимых с ней.  
 Из числа датчиков используется Гироскоп [LSM6DS33](https://www.pololu.com/product/2736), в связке с камерой [Trackingcam](https://disk.yandex.ru/i/8yCIjSCpGo80LA).    
-Двигатели у робота [Pololu micro motor](https://www.pololu.com/product/3072).    
+Двигатели у данного робота [Pololu micro motor](https://www.pololu.com/product/3072).    
 Двигателями управляет двухканальный драйвер [DRIVER 8833](https://iarduino.ru/shop/Expansion-payments/drayver-motorov-dvuhkanalnyy-drv8833.html).
 ## Конструкция:
 > [Робот](https://github.com/Timofei1412/Balanser-SP-7/blob/685f592d8e6889e7a990a774079e22f1517c48ff/%D0%9F%D0%B5%D1%87%D0%B0%D1%82%D1%8C/%D0%91%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%201,1%20v14.stl) состоит из двух деталей: [Основная деталь](https://github.com/Timofei1412/Balanser-SP-7/blob/master/Печать/Body1.stl) и [Держатель аккумулятора](https://github.com/Timofei1412/Balanser-SP-7/blob/master/Печать/Body01.stl).   
