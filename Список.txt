@@ -1,6 +1,0 @@
-LSM6DS33
-Arduino Nano
-Двигатели Pololu micro motor x2
-Драйвер двигателей 8833
-Tracking cam
-Аккум
